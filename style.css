@@ -1,0 +1,368 @@
+* {
+	border:0;
+	margin:0;
+}
+
+body {
+	width:760px;
+	overflow:hidden;
+}
+
+#header {
+	width:100%;
+	height:30px;
+	background:#4A82AE;
+	-webkit-box-shadow:0px 0px 1px #D5D5D5;
+	margin-bottom:10px;
+}
+
+#cont {
+	width:520px;
+	height:auto;
+	float:left;
+	margin-right:5px;
+	position:relative;
+}
+
+#invite {
+	border-radius:3px;
+	color:#333;
+	border:1px solid #999;	
+	font:10px Tahoma;
+	font-weight:bold;
+	height:20px;
+	cursor:pointer;
+	
+	background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.08, rgb(194,194,194)),
+    color-stop(0.54, rgb(237,237,237))
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(194,194,194) 8%,
+    rgb(237,237,237) 54%
+);
+}
+
+#logo {
+	float:left;
+	line-height:30px;
+	font-size:12px;
+	font-family:"Tahoma";
+	font-weight:bold;
+	color:#FFF;
+	margin-left:5px;
+	text-shadow: 0px 1px 0px black;
+	background:url("http://photos-h.ak.fbcdn.net/photos-ak-snc1/v27562/9/101438079941277/app_2_101438079941277_9567.gif") left no-repeat;
+	padding-left:20px;
+}
+
+#logo .version{
+	line-height:30px;
+	font-size:11px;
+	font-family:"Tahoma";
+	font-weight:bold;
+	color:#6C9ED0;
+	text-shadow: 0px 1px 0px black;
+}
+
+#schedule2picture {
+	float:right;
+	line-height:30px;
+	font-size:11px;
+	font-family:"Tahoma";
+	font-weight:bold;
+	color:#FFF;
+	margin-right:10px;
+	text-shadow: 0px 1px 0px black;
+}
+
+#schedule2picture:hover {
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+#student {
+	float:right;
+	line-height:30px;
+	font-size:11px;
+	font-family:"Tahoma";
+	font-weight:bold;
+	color:#FFF;
+	margin-right:10px;
+	text-shadow: 0px 1px 0px black;
+}
+
+#student:hover {
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+/* SIDEBAR */
+#sidebar {
+	width:230px;
+	height:auto;
+	float:left;
+	margin-left:5px;
+}
+
+#sidebar #save , #modify ,#static{
+	width:100%;
+	height:30px;
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.10,#F6F6F6),color-stop(0.90,#DADADA));
+	background-image: -moz-linear-gradient(
+    	center bottom,
+   	 	rgb(246,256,256) 10%,
+   	 	rgb(218,218,218) 80%
+	);
+	font-weight:bold;
+	text-shadow:0px 0px 1px #FFF;
+	color:#000;
+	cursor:pointer;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size:11px;
+	font-family:"Tahoma";
+	-webkit-box-shadow:0px 0px 1px #D5D5D5;
+	-moz-box-shadow:0px 0px 1px #D5D5D5;
+	border:1px solid #D5D5D5
+}
+
+#static {
+	cursor:default;
+}
+
+#sidebar #save:hover , #modify:hover{
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.10,#EEE),color-stop(0.90,#DADADA));
+	background-image: -moz-linear-gradient(
+    	center bottom,
+		rgb(218,218,218) 10%,
+   	 	rgb(246,256,256) 80%
+   	 	
+	);
+}
+
+#sidebar #save:active , #modify:active{
+	background:#D5D5D5
+}
+
+
+/* TABLE */
+#schedule {
+	width:520px;
+	white-space:normal;
+	table-layout:fixed !important;
+}
+
+#schedule tbody tr td {
+	height:27px;
+	max-height:40px !important;
+	font-family:Arial;
+	font-size:x-small;
+	background:#EFEFEF;
+	width:78px;
+	text-align:left;
+	line-height:normal;
+	position:relative;
+}
+
+#schedule tbody tr th {
+	position:relative;
+}
+
+#schedule tbody tr th span {
+	position:relative;
+}
+
+
+#schedule tbody tr td span {
+	position:relative;
+}
+
+#schedule .hour {
+	width:45px !important;
+	background:#EFEFEF;
+	font-family:"Arial";
+	font-size: x-small;
+	word-wrap:break-word;
+	text-align:center;
+}
+
+#schedule > thead > tr > th.hour {
+	font-family:"Arial";
+	font-size:small !important;
+	font-weight:bold;
+	background:#CCC	;
+}
+
+#schedule > thead > tr > th {
+	font-family:"Arial";
+	font-size:small !important;
+	font-weight:bold;
+	background:#CCC	;
+	width:70px;
+	position:relative;
+}
+
+#schedule > thead > tr > th span {
+	position:relative;
+}
+
+
+#friends, #matches {
+	margin-top:10px;
+	width:98%;
+	background:#F6F6F6;
+	padding:1%;
+}
+
+#instr {
+	margin-top:10px;
+	width:96%;
+	background:#FF6;
+	-webkit-box-shadow:0px 0px 3px #CCC;
+	-moz-box-shadow:0px 0px 3px #EAEAEA;
+	padding:2%;
+	font-size:11px;
+	font-family:"Tahoma";
+	font-color:#A2A2A2;
+	
+	
+
+
+}
+
+#friends .friends-header{
+	width:100%;
+	height:20px;
+	font-size:11px;
+	font-family:"Tahoma";
+	font-color:#A2A2A2;
+	font-weight:bold;
+	text-shadow:0px 0px 1px #FFF;
+	text-align:center;
+	background:#F6F6F6;
+	border-bottom:1px solid #E0E0E0;
+	line-height:20px;
+	margin-bottom:5px;
+}
+
+#friends #friends-inner > .ad  ,#matches > .ad{
+	font-size:11px;
+	font-family:"Tahoma";
+	font-color:#A2A2A2;
+	text-align:center;
+	line-height:normal;
+}
+
+/* MATCHES */
+
+#matches .matches-header{
+	width:100%;
+	height:20px;
+	font-size:11px;
+	font-family:"Tahoma";
+	font-color:#A2A2A2;
+	font-weight:bold;
+	text-shadow:0px 0px 1px #FFF;
+	text-align:left;
+	background:#F6F6F6;
+	border-bottom:1px solid #E0E0E0;
+	line-height:20px;
+	margin-bottom:5px; 
+}
+
+#matches .match header{
+	width:100%;
+	height:20px;
+	font-size:11px;
+	font-family:"Tahoma";
+	font-color:#A2A2A2;
+	font-weight:bold;
+	text-shadow:0px 0px 1px #FFF;
+	text-align:left;
+	background:#F6F6F6;
+	border-bottom:1px solid #E0E0E0;
+	line-height:20px;
+	margin-bottom:5px; 
+}
+	 
+	 
+/* ON MATCHES AND FRIENDS */
+
+.friend {
+	width:30px;
+	height:30px;
+	margin:5px;
+	float:left;
+	cursor:pointer;
+}
+
+.friend:hover {
+	-webkit-box-shadow:0px 0px 5px #2466C8;
+	-moz-box-shadow:0px 0px 5px #2466C8;
+}
+
+.friend img {
+	width:30px;
+}
+
+#friend_schedule {
+	display:none;
+	width:98%;
+	padding:1%;
+	height:50px;
+	background:#F3F3F3;
+	font-size:11px;
+	font-family:"Tahoma";
+}
+
+#friend_schedule img{
+	float:left;
+	margin-right:5px;
+}
+
+#footer {
+	border-top:1px solid #EAEAEA;
+	width:98%;
+	height:30px;
+	float:left;
+	margin-top:10px;
+	font-size:11px;
+	font-family:"Tahoma";
+	padding:1%;
+}
+
+#footer a {
+	text-decoration:none;
+	color:#969696;
+}
+
+#footer a:hover {
+	text-decoration:underline;
+}
+
+@-moz-keyframes focus {
+    from {
+    	background:#FF6;
+    }
+
+    to {
+      background:#FF0
+    }
+}
+
+@-webkit-keyframes focus {
+    from {
+    	background:#FF6;
+    }
+
+    to {
+      background:#FF0
+    }
+}
+
